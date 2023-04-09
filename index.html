@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Elite Fire</title>
 </head>
 <body>
 
 
-    <header class="header">
-            <div class="logo-body">
+    <header class="header" data-aos="fade-down" data-aos-once="false" data-aos-duration="1500">
+            <div class="logo-body" >
                 <a href="" class="logo">Elite Fire</a>
                 <p class="logo-sub-title">Автоматические <br>
                     биокамины</p>
@@ -23,13 +24,18 @@
                 <a href="" class="link">Контакты </a>
                 <a href="" class="call"></a>
             </nav>
+
+            <div class="header__burger">
+                
+            </div>
+
     </header>
 
     <main>
         <section class="intro">
             <div class="container">
                 <div class="intro__content">
-                    <div class="intro__text">
+                    <div class="intro__text" data-aos="fade-right" data-aos-once="false" data-aos-duration="1500">
                         <h5 class="intro__text-title">Автоматические
                             биокамины
                             </h5>
@@ -54,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="intro__img">
+                    <div class="intro__img" data-aos="fade-left" data-aos-once="true" data-aos-duration="1500">
                         <div class="intro__img-body">
                             <img class="intro__img-body__img" src="images/intro.png" alt="">
                         </div>
@@ -65,14 +71,15 @@
         <!-- fire -->
         <section class="fire">
             <div class="container">
-                <h5 class="fire__title">Настоящий высокий огонь <br>
+                <h5 class="fire__title" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1300">Настоящий высокий огонь <br>
                     у вас дома</h5>
-                <p class="fire__descr">
+                <p class="fire__descr" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2300">
                     Благодаря специальной технологии горения биоэтанола <br>
 мы добились горения потрясающей красоты
                 </p>
-                <img src="images/fire.png" alt="" class="fire__img">
-                <div class="fire__info">
+                <img data-aos="zoom-in" data-aos-once="false" data-aos-duration="2800" src="images/fire.png" alt="" class="fire__img">
+                <div class="fire__info" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"  data-aos-once="false" data-aos-duration="1300">
                     <div class="fire__info-item">
                         <img src="images/fire-item-1.png" alt="">
                         <p>Пламя яркое, высотой <br>
@@ -96,7 +103,8 @@
         <section class="refill">
             <div class="container">
                 <div class="refill__content">
-                    <div class="refill__info">
+                    <div class="refill__info" data-aos="fade-up"
+                    data-aos-anchor-placement="top-right"  data-aos-once="false" data-aos-duration="1300">
                         <h5 class="refill__info-title">заправка</h5>
                         <p class="refill__info-subTitle">Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей </p>
                         <p class="refill__info-subTitle">
@@ -105,11 +113,12 @@
                         </p>
 
                     </div>
-                    <div class="refill__img">
+                    <div class="refill__img" data-aos="fade-up"
+                    data-aos-anchor-placement="top-left"  data-aos-once="false" data-aos-duration="1300">
                         <img src="images/refill.png" alt="">
                         <div class="refill__img-cirle"></div>
                     </div>
-                    <div class="refill__button"> 
+                    <div class="refill__button" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1300"> 
                         <div class="refill__button-wrapper">
                             <div>
                                 <img src="images/refill-button-1.png" alt="">
@@ -137,10 +146,21 @@
         <section class="fireplace">
             <div class="container">
                 <div class="fireplace__content">
-                    <h2 class="fireplace__title">Умный камин<span></span>очень умный</h2>
-                    <h2 class="fireplace__subTitle">Даже если у Вас нет своего решения по умному дому. <br>
+                    <h2 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-once="false"
+                    data-aos-duration="1500" class="fireplace__title">Умный камин<span></span>очень умный</h2>
+                    <h2 data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-once="false"
+                    data-aos-duration="1500" class="fireplace__subTitle">Даже если у Вас нет своего решения по умному дому. <br>
                         Мы отлично ладим с Яндекс.Алиса и Mi Home.</h2>
-                    <img src="images/fireplace.png" class="fireplace__img" alt="">
+                    <img data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-duration="1500"
+                    data-aos-once="false"
+                    data-aos-offset="0" src="images/fireplace.png" class="fireplace__img" alt="">
                 </div>
             </div>
         </section>
@@ -153,13 +173,19 @@
     <section class="info">
         <div class="container">
             <div class="info__up">
-                <div class="info__up-img">
+                <div class="info__up-img" 
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-once="false">
                     <h2 class="info__up-img-title">Топливный блок</h2>
                     <div class="info__up-img-containerImg">
                         <img src="images/info-up.png" alt="">
                     </div>
                 </div>
-                <div class="info__up-text">
+                <div class="info__up-text" 
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-once="false">
                     <h2 class="info__up-text-title">
                         Очаги для встраивания в нишу<br>
 по Вашим размерам
@@ -178,7 +204,9 @@
             </div>
 
             <div class="info__middle">
-                <div class="info__middle-text">
+                <div class="info__middle-text"  data-aos="fade-right"
+                data-aos-duration="2500"
+                data-aos-once="false">
                     <div class="info__middle-text-up">
                         <h2 class="info__middle-text-title">Варианты отделки</h2>
                         <div class="info__middle-text-up-items">
@@ -214,13 +242,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="info__middle-slider">
+                <div class="info__middle-slider" data-aos="fade-left"
+                data-aos-duration="2500"
+                data-aos-once="false">
                     <img src="images/info-slider.png" alt="">
                 </div>
             </div>
 
             <div class="info__bottom">
-                <div class="info__bottom-item">
+                <div class="info__bottom-item" data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-once="false">
                     <h2 class="info__bottom-item-title">Готовые решения</h2>
                     <p class="info__bottom-item-descr">Напольные отдельно стоящие камины.  <br>
                         Настенные очаги которые вешаются как ТВ. Подвесные модели.</p>
@@ -229,7 +261,9 @@
                     </div>
                 </div>
 
-                <div class="info__bottom-item">
+                <div class="info__bottom-item" data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-once="false">
                     <h2 class="info__bottom-item-title">Аксессуары</h2>
                     <p class="info__bottom-item-descr">Защитные экраны, Дверцы, <br> Стемалит, Дрова, 
                         Камни, Кастомные пульты</p>
@@ -244,7 +278,9 @@
 
     <!-- catalog -->
 
-    <section class="catalog">
+    <section class="catalog" data-aos="fade-up"
+    data-aos-duration="3000"
+                data-aos-once="false">
         <h2 class="catalog__title">Получите каталог с моделями и ценами на всю нашу продукцию</h2>
         <a href="" class="catalog__btn">Получить каталог!</a>
     </section>
@@ -254,8 +290,9 @@
     <section class="slider">
         <div class="container">
             <div class="slider__content">
-                <h2 class="slider__title">Есть задача? Есть решение!</h2>
-                <div class="slider__wrapper">
+                <h2 class="slider__title" data-aos="zoom-in" data-aos-duration="3000"
+                data-aos-once="false" >Есть задача? Есть решение!</h2>
+                <div class="slider__wrapper" data-aos="flip-up" data-aos="zoom-in-up" data-aos-duration="2500">
                     <div class="slider__wrapper-item"></div>
                     <div class="slider__wrapper-item"></div>
                     <div class="slider__wrapper-item"></div>
@@ -264,9 +301,10 @@
             </div>
 
             <div class="slider__content">
-                <h2 class="slider__title">Почемы мы можем многое?
+                <h2 class="slider__title" data-aos="zoom-in" data-aos-duration="3000"
+                data-aos-once="false" >Почемы мы можем многое?
                     Свои люди. Свои станки. Своя лаборатория</h2>
-                <div class="slider__wrapper">
+                <div class="slider__wrapper" data-aos="flip-up" data-aos="zoom-in-up" data-aos-duration="2500">
                     <div class="slider__wrapper-item"></div>
                     <div class="slider__wrapper-item"></div>
                     <div class="slider__wrapper-item"></div>
@@ -283,14 +321,17 @@
 
     <!-- заказ -->
     <section class="order">
-        <h2 class="order__title">вы автор вашего камина</h2>
+        <h2 class="order__title" data-aos="zoom-in" data-aos-duration="3000"
+        data-aos-once="false">вы автор вашего камина</h2>
         <div class="container">
 
             <div class="order__content">
-                <div class="order__content-img">
+                <div class="order__content-img" data-aos="fade-right" data-aos-duration="3000"
+                data-aos-once="false">
                     <img src="images/order.png" alt="">
                 </div>
-                <div class="order__content-blog">
+                <div class="order__content-blog" data-aos="fade-left" data-aos-duration="3000"
+                data-aos-once="false">
                     <div class="order__content-blog-lengh">
                         <h2 class="order__content-blog-lengh-title">
                             Выберите длину
@@ -308,7 +349,7 @@
                         </div>
                     </div>
                     <!--  -->
-                    <div class="order__content-blog-functions">
+                    <div class="order__content-blog-functions" >
                         <h2>дополнительные функции</h2>
                         <div class="order__content-blog-functions-wrapper">
                             <div class="order__content-blog-functions-wrapper-items">
@@ -354,7 +395,8 @@
 
             </div>
 
-            <div class="order__additional">
+            <div class="order__additional" data-aos="fade-up"
+            data-aos-duration="3000" data-aos-once="false">
                 <div class="order__additional-lenght">
                     <span>длина</span>
                     <h2>6.5 м</h2>
@@ -376,9 +418,14 @@
 
         </div>
     </section>
-    <!-- footer -->
+    <!-- contact -->
 
-    <section class="contact">
+    <section class="contact" 
+    data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2500"
+    data-aos-once="false">
         <div class="container">
             <h2 class="contact__title">связаться с нами</h2>
 
@@ -420,7 +467,8 @@
 
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-once="false"
+    data-aos-duration="3000">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__wrapper-left">
@@ -435,6 +483,10 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 </html>

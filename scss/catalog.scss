@@ -1,0 +1,28 @@
+
+
+.catalog {
+    text-align: center;
+    margin: 100px 0;
+
+    &__title {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+
+    &__btn {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #121212;
+        padding: 16px 64px;
+        background: #ECCF94 ;
+        border-radius: 1px;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,132 @@
+
+.contact {
+    width: 100%;
+    background: #121212;
+    padding: 65px 0;
+    &__title {
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(231.91deg, #FFFFFF 37.36%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    }
+    .contact__wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-info {
+            margin-top: 70px;
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+
+            &-item {
+                width: 50%;
+                margin-bottom: 25px;
+                & p {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 36px;
+                    color: #949494
+                }
+                & a {
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+
+                    &:hover {
+                        transition: 0.25s ease all;
+                        color: rgba(255, 207, 122, 1);
+                    }
+                }
+            }
+            @media (max-width:576px) {
+                &-item {
+                    width: 100%;
+                }
+                
+            }
+        }
+
+        &-phone {
+            width: 30%;
+            margin-top: 70px;
+            
+            &-text p {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 36px;
+                color: #949494;
+                margin-bottom: 12px;
+            }
+            &-text a {
+                font-weight: 250;
+                font-size: 36px;
+                line-height: 33px;
+                color: #FFFFFF;
+                text-decoration: none;
+                &:hover {
+                    transition: 0.25s ease all;
+                    color: rgba(255, 207, 122, 1);
+                }
+            }
+            &-btn {
+                margin-top: 60px;
+                & a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 15px 30px;
+                    border: 1px solid #CEB787;
+                    border-radius: 2px;
+
+                    &:hover {
+                        color: black;
+                        transition: 0.25s ease all;
+                        background: rgba(255, 207, 122, 1);
+                    }
+
+                }
+            }
+        }
+
+
+
+        @media (max-width:992px) {
+            & {
+                // justify-content: start;
+            }
+            &-info {
+                width: 50%;
+            }
+            &-phone {
+                width: 40%;
+            }
+        }
+
+        @media (max-width:767px) {
+            &-info {
+                width: 100%;
+            }
+            &-phone {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+
+        
+    }
+}
