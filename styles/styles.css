@@ -1,4 +1,81 @@
 @import url("https://fonts.cdnfonts.com/css/lab-grotesque");
+body {
+  font-family: "Lab Grotesque", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1d1d1c;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.menu {
+  width: 50%;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+}
+.menu.active-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  color: white;
+}
+.menu__close {
+  background: url("../images/close.png") no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 101;
+}
+
+.nav__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__menu a {
+  color: #949494;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 50px 30px;
+  text-decoration: none;
+}
+.nav__menu a:hover {
+  transition: 0.25s ease all;
+  color: rgb(255, 207, 122);
+}
+
 .header {
   max-width: 1340px;
   width: 100%;
@@ -50,18 +127,27 @@
   background: url("../images/call.png") no-repeat;
   background-size: cover;
 }
-.header .nav__burger {
+.header__burger {
   display: none;
+  background: url("../images/burger.png") no-repeat;
+  width: 30px;
+  height: 30px;
 }
+.header__burger.active {
+  background: url("../images/close.png") no-repeat;
+}
+
 @media (max-width: 767px) {
   .header .nav {
     display: none;
   }
+  .header__burger {
+    display: block;
+  }
 }
-
 .intro {
   width: 100%;
-  height: calc(100vh - 130px);
+  margin: 70px 0 200px 0;
   display: flex;
   align-items: center;
 }
@@ -89,7 +175,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 .intro__text {
   width: 45%;
@@ -136,6 +221,9 @@
   }
 }
 @media (max-width: 992px) {
+  .intro {
+    margin: 20% 0;
+  }
   .intro__text {
     width: 100%;
   }
@@ -213,6 +301,13 @@
   .fire__img {
     margin-bottom: 30px;
   }
+  .fire__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .fire__descr {
+    font-size: 14px;
+  }
 }
 
 .refill {
@@ -252,6 +347,11 @@
   margin-bottom: 25px;
   width: 60%;
 }
+@media (max-width: 767px) {
+  .refill__info-title {
+    font-size: 35px;
+  }
+}
 @media (max-width: 576px) {
   .refill__info-subTitle {
     width: 100%;
@@ -263,16 +363,6 @@
 }
 .refill__img img {
   max-width: 100%;
-}
-.refill__img-cirle {
-  background: url("../images/refill-button.png") no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -14%;
-  left: -12%;
-  z-index: 10;
 }
 .refill__button {
   position: absolute;
@@ -349,6 +439,13 @@
 @media (max-width: 767px) {
   .fireplace__title span {
     margin: 0 15px;
+  }
+  .fireplace__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .fireplace__subTitle {
+    font-size: 14px;
   }
 }
 
@@ -498,6 +595,26 @@
     width: 100%;
     margin-bottom: 40px;
   }
+}
+
+.swiper-slide {
+  min-width: 537px;
+  width: 100%;
+  height: 346px;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+.swiper-wrapper-button-prev {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  z-index: 101;
+}
+.swiper-wrapper-button-next {
+  position: absolute;
+  bottom: 15%;
+  left: 20;
 }
 
 .catalog {
@@ -959,32 +1076,6 @@
   .slider__wrapper-item {
     width: 80%;
     margin-bottom: 5%;
-  }
-}
-
-body {
-  font-family: "Lab Grotesque", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #1d1d1c;
-}
-body * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body img {
-  max-width: 100%;
-}
-
-.container {
-  max-width: 1340px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-@media (max-width: 1200px) {
-  .container {
-    width: 90%;
   }
 }
 

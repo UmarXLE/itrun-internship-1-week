@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Elite Fire</title>
@@ -24,12 +27,20 @@
                 <a href="" class="link">Контакты </a>
                 <a href="" class="call"></a>
             </nav>
-
-            <div class="header__burger">
-                
-            </div>
-
+            <div class="header__burger"></div>
     </header>
+
+    <div class="menu">
+        <nav class="nav__menu">
+            <a href="" class="link">Продукт</a>
+            <a href="" class="link">Конструктор</a>
+            <a href="" class="link">Опыт</a>
+            <a href="" class="link">Контакты </a>
+            <a href="" class="call"></a>
+        </nav>
+
+        <div class="menu__close"></div>
+    </div>
 
     <main>
         <section class="intro">
@@ -60,7 +71,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="intro__img" data-aos="fade-left" data-aos-once="true" data-aos-duration="1500">
+                    <div class="intro__img" data-aos="fade-left" data-aos-once="false" data-aos-duration="1500">
                         <div class="intro__img-body">
                             <img class="intro__img-body__img" src="images/intro.png" alt="">
                         </div>
@@ -71,7 +82,7 @@
         <!-- fire -->
         <section class="fire">
             <div class="container">
-                <h5 class="fire__title" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1300">Настоящий высокий огонь <br>
+                <h5 class="fire__title" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1300">Настоящий высокий огонь <br>
                     у вас дома</h5>
                 <p class="fire__descr" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2300">
                     Благодаря специальной технологии горения биоэтанола <br>
@@ -116,7 +127,7 @@
                     <div class="refill__img" data-aos="fade-up"
                     data-aos-anchor-placement="top-left"  data-aos-once="false" data-aos-duration="1300">
                         <img src="images/refill.png" alt="">
-                        <div class="refill__img-cirle"></div>
+                        <!-- <div class="refill__img-cirle"></div> -->
                     </div>
                     <div class="refill__button" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1300"> 
                         <div class="refill__button-wrapper">
@@ -242,10 +253,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="info__middle-slider" data-aos="fade-left"
+                <div class="swiper info__middle-slider" data-aos="fade-left"
                 data-aos-duration="2500"
                 data-aos-once="false">
-                    <img src="images/info-slider.png" alt="">
+                    <!-- <img src="images/info-slider.png" alt=""> -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">1</div>
+                        <div class="swiper-slide">2</div>
+                        <div class="swiper-slide">3</div>
+                        ...
+                      </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+
                 </div>
             </div>
 
@@ -467,8 +489,7 @@
 
 
     <!-- footer -->
-    <footer class="footer" data-aos="fade-up" data-aos-once="false"
-    data-aos-duration="3000">
+    <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__wrapper-left">
@@ -482,11 +503,10 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+    <script>AOS.init();</script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
