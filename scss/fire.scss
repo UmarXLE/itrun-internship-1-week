@@ -3,6 +3,7 @@
 
 .fire {
     width: 100%;
+    overflow-y: hidden;
     &__title {
         font-weight: 250;
         font-size: 40px;
@@ -55,7 +56,14 @@
                 width: 50%;
                 margin-bottom: 50px;
             }
+          &__title {
+            font-size: 35px;
         }
+
+        &__descr {
+            font-size: 18px;
+        }
+
         @media (max-width:767px) {
             &-item {
                 width: 100%;
@@ -83,3 +91,4 @@
 
 }
 
+}

@@ -37,6 +37,15 @@
 
     }
 
+    @media (max-width:992px) {
+        &__title {
+            font-size: 35px;
+        }
+        &__subTitle {
+            font-size: 18px;
+        }
+    }
+
     @media (max-width:767px) {
         &__title span {
             margin: 0 15px;

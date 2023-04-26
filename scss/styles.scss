@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background: #1d1d1c;;
+    overflow-x: hidden;
     * {
         margin: 0;
         padding: 0;
@@ -24,6 +25,7 @@ body {
     padding: 0 20px;
     margin: 0 auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     // @media (max-width:1200px) {
     //     width: 992px;
     // }
@@ -101,7 +103,6 @@ body {
 
 // swipe global
 .swiper {
-    position: relative;
     &-button-prev-1 {
         position: absolute;
         top: 80%;

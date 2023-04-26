@@ -201,13 +201,24 @@
         @media (max-width:1200px) {
             &-img {
                 width: 40%;
-                margin-right: 10%;
+                margin-right: 5%;
             }
             &-blog {
-                width: 40%;
+                width: 55%;
             }
         }
 
+        @media (max-width:992px) {
+            & {
+                flex-wrap: wrap;
+            }
+            &-img {
+                width: 100%;
+            }
+            &-blog {
+                width: 100%;
+            }
+        }
         @media (max-width:767px) {
             & {
                 flex-wrap: wrap;
@@ -345,8 +356,8 @@
             }
     
             label{
-                width: 20px;
-                height: 20px;
+                width: 20px !important;
+                height: 20px !important;
                 margin-left: 50px;
                 border-radius:  2px;
                 border: 1px solid #eccf94;
@@ -381,6 +392,10 @@
             }
         }
     }   
+
+    @media(max-width:767px) {
+        flex-wrap: wrap;
+    }
 }
 
 .order-swiper {
@@ -388,7 +403,7 @@
 
 }
 .order-item-slider {
-    width: 50%;
+    position: relative;
 }
 .order-wrapper-slider {
 }
@@ -416,4 +431,8 @@
         font-size: 25px;
         font-weight: 700;
     }
+}
+
+.checkbox__wrap {
+    flex-wrap: wrap;
 }
