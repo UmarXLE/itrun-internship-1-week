@@ -108,5 +108,13 @@
     }
 }
 
+@media (max-width:460px) {
+    &__text{
+        &-title {
+            font-size: 32px;
+        }
+    }
 
+
+}
 }

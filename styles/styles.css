@@ -285,6 +285,11 @@ body img {
     max-width: 150%;
   }
 }
+@media (max-width: 460px) {
+  .intro__text-title {
+    font-size: 32px;
+  }
+}
 
 .fire {
   width: 100%;
