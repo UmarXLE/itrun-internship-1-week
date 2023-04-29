@@ -34,6 +34,7 @@ body img {
   z-index: 100;
   display: none;
   position: fixed;
+  transition: 0.25s ease all;
 }
 .menu.active-menu {
   display: flex;
@@ -46,6 +47,8 @@ body img {
   z-index: 100;
   background-color: black;
   color: white;
+  overflow-y: hidden;
+  transition: 0.25s ease all;
 }
 .menu__close {
   background: url("../images/close.png") no-repeat;
@@ -59,8 +62,10 @@ body img {
 }
 
 .nav__menu {
+  transition: 0.25s ease all;
   width: 100%;
   display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -276,6 +281,9 @@ body img {
   .intro__text-title {
     font-size: 40px;
   }
+  .intro img {
+    max-width: 150%;
+  }
 }
 
 .fire {
@@ -356,6 +364,22 @@ body img {
     font-size: 14px;
   }
 }
+@media (max-width: 767px) {
+  .fire__title {
+    font-size: 35px;
+  }
+  .fire__descr {
+    font-size: 16px;
+  }
+  .fire__info {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .fire__title {
+    font-size: 30px;
+  }
+}
 
 .refill {
   width: 100%;
@@ -403,10 +427,16 @@ body img {
   .refill__info-title {
     font-size: 35px;
   }
+  .refill__info-subTitle {
+    font-size: 16px;
+  }
 }
 @media (max-width: 576px) {
   .refill__info-subTitle {
     width: 100%;
+  }
+  .refill__info-title {
+    font-size: 30px;
   }
 }
 .refill__img {
@@ -498,14 +528,23 @@ body img {
 }
 @media (max-width: 767px) {
   .fireplace__title span {
-    margin: 0 15px;
+    margin: 0 10px;
   }
   .fireplace__title {
     font-size: 30px;
     margin-bottom: 10px;
   }
   .fireplace__subTitle {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .fireplace__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .fireplace__title span {
+    margin: 0 7px;
   }
 }
 
@@ -650,6 +689,11 @@ body img {
   color: #FFFFFF;
   margin-bottom: 35px;
 }
+@media (max-width: 992px) {
+  .info__bottom-item {
+    width: 100%;
+  }
+}
 
 .info-middle-swiper {
   width: 100%;
@@ -678,6 +722,16 @@ body img {
   border-radius: 1px;
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  .catalog__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .catalog__title {
+    font-size: 22px;
+  }
+}
 
 .catalog {
   text-align: center;
@@ -701,6 +755,16 @@ body img {
   background: #ECCF94;
   border-radius: 1px;
   text-decoration: none;
+}
+@media (max-width: 767px) {
+  .catalog__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .catalog__title {
+    font-size: 22px;
+  }
 }
 
 .contact {
@@ -755,6 +819,11 @@ body img {
   transition: 0.25s ease all;
   color: rgb(255, 207, 122);
 }
+@media (max-width: 767px) {
+  .contact .contact__wrapper-info a {
+    font-size: 20px;
+  }
+}
 @media (max-width: 576px) {
   .contact .contact__wrapper-info-item {
     width: 100%;
@@ -801,6 +870,11 @@ body img {
   transition: 0.25s ease all;
   background: rgb(255, 207, 122);
 }
+@media (max-width: 767px) {
+  .contact .contact__wrapper-phone-text a {
+    font-size: 25px;
+  }
+}
 @media (max-width: 992px) {
   .contact .contact__wrapper-info {
     width: 50%;
@@ -816,6 +890,11 @@ body img {
   .contact .contact__wrapper-phone {
     width: 100%;
     margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__title {
+    font-size: 30px;
   }
 }
 
@@ -890,6 +969,11 @@ body img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+@media (max-width: 576px) {
+  .order__title {
+    font-size: 30px;
+  }
 }
 .order__content {
   margin: 65px 0;
@@ -1080,6 +1164,9 @@ body img {
   .order__content-blog {
     width: 100%;
   }
+  .order__content__title {
+    font-size: 30px;
+  }
 }
 .order__additional {
   width: 100%;
@@ -1263,6 +1350,11 @@ body img {
   flex-wrap: wrap;
 }
 
+@media (max-width: 767px) {
+  .order-btn-prev, .order-btn-next {
+    display: none;
+  }
+}
 .slider {
   width: 100%;
 }
@@ -1318,6 +1410,16 @@ body img {
 @media (max-width: 992px) {
   .slider .slider__title {
     font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .slider .slider__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .slider .slider__title {
+    font-size: 25px;
   }
 }
 

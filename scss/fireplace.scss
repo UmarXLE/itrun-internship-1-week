@@ -48,14 +48,25 @@
 
     @media (max-width:767px) {
         &__title span {
-            margin: 0 15px;
+            margin: 0 10px;
         }
         &__title {
             font-size: 30px;
             margin-bottom: 10px;
         }
         &__subTitle {
-            font-size: 14px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:576px) {
+        &__title {
+            font-size: 25px;
+            margin-bottom: 10px;
+
+            & span {
+                margin: 0 7px;
+            }
         }
     }
 }

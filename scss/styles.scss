@@ -48,6 +48,8 @@ body {
     z-index: 100;
     display: none;
     position: fixed;
+    transition: 0.25s ease all;
+
     &.active-menu {
         display: flex;
         position: fixed;
@@ -59,6 +61,10 @@ body {
         z-index: 100;
         background-color: black;
         color: white;
+        overflow-y: hidden;
+        transition: 0.25s ease all;
+
+
     }
 
     &__close {
@@ -75,8 +81,10 @@ body {
 
 
 .nav__menu {
+    transition: 0.25s ease all;
     width: 100%;
     display: flex;
+    overflow-y: hidden;
     flex-direction: column;
     position: fixed;
     top: 0;

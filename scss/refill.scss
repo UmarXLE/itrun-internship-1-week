@@ -46,11 +46,17 @@
             &-title {
                 font-size: 35px;
             }
+            &-subTitle {
+                font-size: 16px;
+            }
         }
         @media (max-width:576px) {
             &-subTitle {
                 width: 100%;
             }
+            &-title {
+                font-size: 30px;
+            } 
         }
 
     }

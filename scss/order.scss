@@ -17,6 +17,12 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        
+        @media (max-width:576px) {
+            & {
+                font-size: 30px;
+            }
+        }
     }
 
     &__content {
@@ -229,6 +235,10 @@
             &-blog {
                 width: 100%;
             }
+
+            &__title {
+                font-size: 30px;
+            }
         }
     }
 
@@ -435,4 +445,11 @@
 
 .checkbox__wrap {
     flex-wrap: wrap;
+}
+
+
+@media (max-width:767px) {
+    .order-btn-prev ,.order-btn-next {
+        display: none;
+    }
 }
